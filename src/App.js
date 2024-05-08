@@ -39,14 +39,14 @@ function App() {
   }
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='/fitness-area-react-project'>
           <Navbar title="Fitness_Area" home="HOME" about="About Us" login="Login" register="Register" help="Help" mode={mode} toggleMode={toggleMode} button={button}/>
           <Alert alert={alert}/>
          <Routes>
-          <Route path='/' element={<Home/>} />
+          <Route path='/' element={<Home />} />
           <Route path='/about' element={<About title1="Information About Us" title2="Technology To Be Use" title3="Contact Us" mode={mode}/>}/>
-          <Route path='/login' element={<Login/>}/>
-          <Route path='/register' element={<Register/>}/>
+          <Route path='/login' element={<Login />}/>
+          <Route path='/register' element={<Register />}/>
         </Routes>
       </BrowserRouter> 
    </>
