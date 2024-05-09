@@ -1,97 +1,53 @@
-import React, { useState } from 'react';
-import {
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption,
-} from 'reactstrap';
-
-const items = [
-  {
-    src: 'https://picsum.photos/id/123/1550/650',
-    altText: 'network error',
-    caption: 'WELCOME TO FIINESS_AREA ',
-    key: 1,
-  },
-  {
-    src: 'https://picsum.photos/id/456/1550/650',
-    altText: 'network error',
-    caption: 'We Are Providing A Best Fitness Solution',
-    key: 2,
-  },
-  {
-    src: 'https://picsum.photos/id/678/1550/650',
-    altText: 'network error',
-    caption: 'Join Us To Look Better',
-    key: 3,
-  },
-];
+import React from 'react'
+import Carousel from 'react-bootstrap/Carousel'
+import pic1 from './images/pic1.jpg'
+import pic2 from './images/pic2.jpg'
+import pic3 from './images/pic3.jpg'
+import pic4 from './images/pic4.jpg'
 
 
-export default function Home(args) {
 
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
-
-  const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  };
-
-  const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  };
-
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  };
-
-  const slides = items.map((item) => {
-    return (
-      <CarouselItem
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
-        key={item.src}
-      >
-        <img src={item.src} alt={item.altText} />
-        <CarouselCaption
-          captionText={item.caption}
-          captionHeader={item.caption}
-        />
-      </CarouselItem>
-    );
-  });
- 
-     
+function Home() {
   return (
-  <Carousel
-      activeIndex={activeIndex}
-      next={next}
-      previous={previous}
-      {...args}
-    >
-      <CarouselIndicators
-        items={items}
-        activeIndex={activeIndex}
-        onClickHandler={goToIndex}
-      />
-      {slides}
-      <CarouselControl
-        direction="prev"
-        directionText="Previous"
-        onClickHandler={previous}
-      />
-      <CarouselControl
-        direction="next"
-        directionText="Next"
-        onClickHandler={next}
-      />
+    <div className='container my-2'>
+       <Carousel>
+      <Carousel.Item>
+        <img style={{height:'80vh'}} className='d-block w-100' src={pic1} alt='network error'/>
+        <Carousel.Caption>
+          <h3>WELCOME TO FIINESS_AREA</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item> 
+      <img style={{height:'80vh'}} className='d-block w-100' src={pic2} alt='network error'/>
+        <Carousel.Caption>
+          <h3>We Are Providing A Best Fitness Solution</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <img style={{height:'80vh'}} className='d-block w-100' src={pic3} alt='network error'/>
+        <Carousel.Caption>
+          <h3>C</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+      <img style={{height:'80vh'}} className='d-block w-100' src={pic4} alt='network error'/>
+        <Carousel.Caption>
+          <h3>Join Us To Look Better</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
     </Carousel>
-    
+      
+    </div>
   )
 }
+
+export default Home
+
