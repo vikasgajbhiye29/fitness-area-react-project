@@ -14,33 +14,29 @@ function Home() {
       <Carousel.Item>
         <img style={{height:'80vh'}} className='d-block w-100' src={pic1} alt='network error'/>
         <Carousel.Caption>
-          <h3>WELCOME TO FIINESS_AREA</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3> WELCOME TO FITNESS_AREA</h3>
+          <p>Thank You To Connect Us</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item> 
       <img style={{height:'80vh'}} className='d-block w-100' src={pic2} alt='network error'/>
         <Carousel.Caption>
-          <h3>We Are Providing A Best Fitness Solution</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         <h3>We Are Providing A Best Fitness Solution</h3>
+          <p>Fallow Our Instructions To Build Your Fitness</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
       <img style={{height:'80vh'}} className='d-block w-100' src={pic3} alt='network error'/>
         <Carousel.Caption>
-          <h3>C</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3>Perfect Look Make Us Impressive</h3>
+          <p>Every Activity Make You Perfect Day By Day</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
       <img style={{height:'80vh'}} className='d-block w-100' src={pic4} alt='network error'/>
         <Carousel.Caption>
-          <h3>Join Us To Look Better</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3>Join Us Now</h3>
+          <p>Register Here</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
