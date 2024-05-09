@@ -27,7 +27,7 @@ export default function Navbar(props) {
           <Link className="nav-link" to="/register">{props.register}</Link>
         </li>
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             {props.help}
           </a>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">

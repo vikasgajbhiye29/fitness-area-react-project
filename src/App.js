@@ -42,6 +42,7 @@ function App() {
       <BrowserRouter basename='/fitness-area-react-project'>
           <Navbar title="Fitness_Area" home="HOME" about="About Us" login="Login" register="Register" help="Help" mode={mode} toggleMode={toggleMode} button={button}/>
           <Alert alert={alert}/>
+
          <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About title1="Information About Us" title2="Technology To Be Use" title3="Contact Us" mode={mode}/>}/>
@@ -49,7 +50,7 @@ function App() {
           <Route path='/register' element={<Register />}/>
         </Routes>
       </BrowserRouter> 
-   </>
+   </>                                                                                                                                                                                          
   );
 }
 export default App;
