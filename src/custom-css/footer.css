@@ -1,0 +1,27 @@
+.footer{
+    background-color: black;
+    color: gray;
+    padding-top: 2rem;
+}
+
+.footer-custom-1 h4 strong{
+    color:red;
+}
+.footer-custom-1 h4 span{
+    color:gray;
+}
+.footer-youtube a {
+    color: red;
+}
+.footer-custom-2 ul{
+    list-style: none;
+}
+
+.footer-link-decoration{
+   text-decoration: none;
+   color: gray;
+   padding-left: 0;
+}
+.footer-location{
+    color: green;
+}

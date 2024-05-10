@@ -8,6 +8,7 @@ import{BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -42,13 +43,15 @@ function App() {
       <BrowserRouter basename='/fitness-area-react-project'>
           <Navbar title="Fitness_Area" home="HOME" about="About Us" login="Login" register="Register" help="Help" mode={mode} toggleMode={toggleMode} button={button}/>
           <Alert alert={alert}/>
+          
 
-         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About title1="Information About Us" title2="Technology To Be Use" title3="Contact Us" mode={mode}/>}/>
-          <Route path='/login' element={<Login />}/>
-          <Route path='/register' element={<Register />}/>
-        </Routes>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About title1="Information About Us" title2="Technology To Be Use" title3="Contact Us" mode={mode}/>}/>
+            <Route path='/login' element={<Login />}/>
+            <Route path='/register' element={<Register />}/>
+          </Routes>
+          <Footer home="Home" about="About_Us" sign_up="Sign_Up" contact_us="Contact_Us" service="Service" email="gajbhiye.vikas29@gmail.com" mobile="7709008992" address="Gautam Nagar, MahadevKhori, Amaravati, MH"/>
       </BrowserRouter> 
    </>                                                                                                                                                                                          
   );
