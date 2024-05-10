@@ -17,10 +17,10 @@ function Footer(props) {
             <div className='container'>
                 <div className='container row'>
                     <div className='col-md-6 col-lg-5 col-12 footer-custom-1'>
-                        <div>
+                        <div className='container'>
                             <h4><strong>Fitness</strong><span>_Area</span></h4>
                             <p className='col-6'> Live Long With Your Bold Fitness</p>
-                            <div className='footer-icon'>
+                            <div className='footer-icon' style={{marginBottom:'2rem'}}>
                                 <div className='row'>
                                     <div className='col-2'><a href='https://www.instagram.com' target='blank'> <GrInstagram /> </a></div>
                                     <div className='col-2'><a href='https://www.facebook.com' target='blank'> <GrFacebookOption /></a></div>
@@ -34,7 +34,7 @@ function Footer(props) {
                         </div>
                     </div>
                     <div className='col-md-6 col-lg-3 col-12 footer-custom-2'>
-                        
+                        <div className='container' >
                             <h4>Regarding_Us</h4>
                             <ul>
                                 <li className="nav-item">
@@ -57,21 +57,21 @@ function Footer(props) {
                                  </li>
 
                             </ul>
-                       
+                        </div>
                     </div>
                     <div className='col-md-6 col-lg-4 col-12 footer-custom-3 '>
-                        <div>
+                        <div className='container'>
                             <h4>Contact_Info</h4>
-                            <p> <strong className='footer-location'> <MdOutlineEmail /></strong> <span> {props.email} </span></p>
+                            <p> <strong className='footer-location'> <MdOutlineEmail /></strong> <span>{props.email}</span></p>
                             <p> <strong className='footer-location'> <CiMobile4 /> </strong><span> {props.mobile} </span></p>
-                            <p> <strong className='footer-location'> <SlLocationPin /></strong>  <span> {props.address} </span></p>
+                            <p> <strong className='footer-location'> <SlLocationPin /></strong>  <span>{props.address}</span></p>
                         </div>
                     </div>
                 
                 </div> 
             </div>
             <div className='container-fluid text-center my-3' style={{backgroundColor:'gray', color:'black'}}>
-                <p>2024 All @CopyRight Reserved By <strong>"vikasgajbhiye29"</strong></p>
+                <span>2024 All @CopyRight Reserved By "vikasgajbhiye29"</span>
 
             </div>
         </div>
