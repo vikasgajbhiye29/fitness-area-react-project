@@ -22,14 +22,12 @@ function Footer(props) {
                             <p className='col-6'> Live Long With Your Bold Fitness</p>
                             <div className='footer-icon' style={{marginBottom:'2rem'}}>
                                 <div className='row'>
-                                    <div className='col-2'><a href='https://www.instagram.com' target='blank'> <GrInstagram /> </a></div>
+                                    <div className='col-2'><a href='https://www.instagram.com/vikasgajbhiye29/' target='blank'> <GrInstagram /> </a></div>
                                     <div className='col-2'><a href='https://www.facebook.com' target='blank'> <GrFacebookOption /></a></div>
-                                    <div className='col-2'><a  href='https://www.linkedin.com' target='blank'><GrLinkedinOption /></a></div>
-                                    <div className='col-2'><a  href='https://www.twitter.com' target='blank'> <GrTwitter /></a></div>
+                                    <div className='col-2'><a  href='https://www.linkedin.com/in/vikas-gajbhiye-b8b5a1246/' target='blank'><GrLinkedinOption /></a></div>
+                                    <div className='col-2'><a  href='https://twitter.com/GajbhiyeVikas29' target='blank'> <GrTwitter /></a></div>
                                     <div className='col-2 footer-youtube'> <a  href='https://www.youtube.com' target='blank'> <GrYoutube /></a>  </div>
-                                </div> 
-                                
-                               
+                                </div>   
                             </div>
                         </div>
                     </div>
