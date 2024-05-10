@@ -41,9 +41,6 @@ function Footer(props) {
                                 <li className="nav-item">
                                     <Link className="footer-link-decoration" to="/about">{props.about}</Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link className="footer-link-decoration" to="/register">{props.sign_up}</Link>
-                                </li>
                                 <li className="nav-item dropdown">
                                     <a className="dropdown-toggle footer-link-decoration" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                          {props.service} </a>

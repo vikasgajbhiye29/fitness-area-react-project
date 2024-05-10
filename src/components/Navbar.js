@@ -49,39 +49,60 @@ export default function Navbar(props) {
                 </ul>
               </li>
             </ul>
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                  {/* <!-- Button trigger for login modal --> */}
-                  <button style={{marginLeft:'40rem'}} type="button" className="btn btn-success" data-bs-toggle="modal" data-bs-target="#Login">Sign In</button>
-              </li>
-              <li className="nav-item">
-              {/* <!-- Button trigger for Registration modal --> */}
-              <button style={{marginLeft:'1rem'}} type="button" className="btn btn-success" data-bs-toggle="modal" data-bs-target="#Registration">Sign Up</button>
-              </li>
-            </ul>
             <form className="d-flex">
-              <div className={`form-check form-switch text-${props.mode === 'light'?'dark':'light'}`}>
+              <div style={{padding:"10px"}} className={`form-check form-switch text-${props.mode === 'light'?'dark':'light'}`}>
                 <input className="form-check-input" onClick={props.toggleMode} type="checkbox" id="flexSwitchCheckDefault"/>
                 <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Dark Mode {props.button}</label>
               </div>
             </form>
-          </div>
+            <ul className="navbar-nav">
+              <li style={{padding:"2px"}} className="nav-item">
+                  {/* <!-- Button trigger for login modal --> */}
+                  <button type="button" className="btn btn-success" data-bs-toggle="modal" data-bs-target="#Login">Sign In</button>
+              </li>
+              <li style={{padding:"2px"}} className="nav-item">
+              {/* <!-- Button trigger for Registration modal --> */}
+              <button type="button" className="btn btn-success" data-bs-toggle="modal" data-bs-target="#Registration">Sign Up</button>
+              </li>
+            </ul>
+          </div>  
         </div>
       </nav>
       {/* <!-- LogIn Modal --> */}
       <div class="modal fade" id="Login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header" style={{backgroundColor:"darkgray"}}>
               <h5 class="modal-title" id="exampleModalLabel">LogIn</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body" style={{backgroundColor:"black", color:"gray"}}>
             <div class="modal-body">
-              Add Login placeHolder 
+            <form>
+
+                            <div className="from-group mb-2">
+                              <label className="form-label">Email or Username :</label>
+                              <input style={{backgroundColor:"black", color:"white"}} className="form-control"
+                                type="email"
+                                placeholder="Enter Your Email"
+                                name="email"
+                                value={email} 
+                                onChange={(e) => setEmail(e.target.value)} ></input>
+                            </div>
+                            <div className="from-group mb-2">
+                              <label className="form-label">Password :</label>
+                              <input style={{backgroundColor:"black", color:"white"}} className="form-control"
+                                type="password"
+                                placeholder="Enter Your Password"
+                                name="password"
+                                value={password} 
+                                onChange={(e) => setPassword(e.target.value)} ></input>
+                            </div>
+                            <div className="container d-grid gap-2 col-3 mx-auto my-3">
+                            <button className="btn btn-success my-3" type="submit" onClick={saveUser}>Submit</button>
+                            </div>
+                        </form>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>
@@ -91,16 +112,16 @@ export default function Navbar(props) {
        <div class="modal fade" id="Registration" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header" style={{backgroundColor:"darkgray"}}>
               <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-            <div className="card-body">
+            <div class="modal-body" style={{backgroundColor:"black", color:"gray"}}>
+              <div className="card-body">
                         <form>
                             <div className="from-group mb-2">
                               <label className="form-label">First Name :</label>
-                              <input className="form-control"
+                              <input style={{backgroundColor:"black", color:"white"}} className="form-control"
                                   type="text"
                                   placeholder="Enter First Name"
                                   name="fname"
@@ -109,7 +130,7 @@ export default function Navbar(props) {
                             </div>
                             <div className="from-group mb-2">
                               <label className="form-label">Last Name :</label>
-                              <input className="form-control"
+                              <input style={{backgroundColor:"black", color:"white"}} className="form-control"
                                 type="text"
                                 placeholder="Enter Last Name"
                                 name="lname"
@@ -118,7 +139,7 @@ export default function Navbar(props) {
                             </div>
                             <div className="from-group mb-2">
                               <label className="form-label">Username :</label>
-                              <input className="form-control"
+                              <input style={{backgroundColor:"black", color:"white"}} className="form-control"
                                 type="text"
                                 placeholder="Enter Username Name"
                                 name="username"
@@ -127,7 +148,7 @@ export default function Navbar(props) {
                             </div>
                             <div className="from-group mb-2">
                               <label className="form-label">Email :</label>
-                              <input className="form-control"
+                              <input style={{backgroundColor:"black", color:"white"}} className="form-control"
                                 type="email"
                                 placeholder="Enter Your Email"
                                 name="email"
@@ -136,7 +157,7 @@ export default function Navbar(props) {
                             </div>
                             <div className="from-group mb-2">
                               <label className="form-label">Password :</label>
-                              <input className="form-control"
+                              <input style={{backgroundColor:"black", color:"white"}} className="form-control"
                                 type="password"
                                 placeholder="Enter Your Password"
                                 name="password"
@@ -144,7 +165,7 @@ export default function Navbar(props) {
                                 onChange={(e) => setPassword(e.target.value)} ></input>
                             </div>
                             <div className="container d-grid gap-2 col-3 mx-auto">
-                            <button className="btn btn-success" type="submit" onClick={saveUser}>Submit</button>
+                            <button className="btn btn-success my-3" type="submit" onClick={saveUser}>Submit</button>
                             </div>
                         </form>
                       </div>
@@ -152,9 +173,6 @@ export default function Navbar(props) {
           </div>
         </div>
       </div>
-
-
-
 
     </div>
 
