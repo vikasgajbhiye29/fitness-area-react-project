@@ -36,11 +36,10 @@ function Home() {
       <img style={{height:'80vh'}} className='d-block w-100' src={pic4} alt='network error'/>
         <Carousel.Caption>
           <h3>Join Us Now</h3>
-          <p>Register Here</p>
+          <p style={{cursor:"pointer"}} data-bs-toggle="modal" data-bs-target="#Registration">Register Here</p>
         </Carousel.Caption>
       </Carousel.Item>
-    </Carousel>
-      
+    </Carousel>  
     </div>
   )
 }
