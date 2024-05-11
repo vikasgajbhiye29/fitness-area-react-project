@@ -6,8 +6,8 @@ function Offer() {
   return (
     	<div className='container' style={{marginBottom:"1rem"}} >
 				<div className='row'>
-					<div className='col'>
-					<div className="card " style={{width: "16rem",borderTop:"2px solid green", borderBottom:"2px solid green"}}>
+					<div className='col-sm-3'>
+					<div className="card " style={{borderTop:"2px solid green", borderBottom:"2px solid green"}}>
 					<div className="card-header text-center" ><strong>Offer for 1-Month</strong></div>
   					<img src={pic1} className="card-img-top" alt="network error" />
   					<div className="card-body" 
@@ -24,8 +24,8 @@ function Offer() {
 					</div>
 					</div>
 
-					<div className='col'>
-					<div className="card" style={{width: "16rem", borderTop:"2px solid green", borderBottom:"2px solid green"}}>
+					<div className='col-sm-3'>
+					<div className="card" style={{ borderTop:"2px solid green", borderBottom:"2px solid green"}}>
 					<div className="card-header text-center" ><strong>Offer for 3-Month</strong></div>
   					<img src={pic1} className="card-img-top" alt="network error" />
   					<div className="card-body" >
@@ -41,8 +41,8 @@ function Offer() {
 						</div>
 					</div>
 
-					<div className='col'>
-					<div className="card" style={{width: "16rem", borderTop:"2px solid green", borderBottom:"2px solid green"}}>
+					<div className='col-sm-3'>
+					<div className="card" style={{ borderTop:"2px solid green", borderBottom:"2px solid green"}}>
 					<div className="card-header text-center"><strong>Offer for 6-Month</strong></div>
   					<img src={pic1} className="card-img-top" alt="network error" />
   					<div className="card-body" >
@@ -58,8 +58,8 @@ function Offer() {
 							</div>
 					</div>
 
-					<div className='col'>
-					<div className="card" style={{width: "16rem",  borderTop:"2px solid green", borderBottom:"2px solid green"}}>
+					<div className='col-sm-3'>
+					<div className="card" style={{borderTop:"2px solid green", borderBottom:"2px solid green"}}>
 					<div className="card-header text-center" ><strong>Offer for 12-Month</strong></div>
   					<img src={pic1} className="card-img-top" alt="network error" />
   					<div className="card-body" >
