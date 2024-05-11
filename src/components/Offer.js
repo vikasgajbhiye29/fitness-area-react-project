@@ -4,12 +4,14 @@ import pic1 from './images/imgforoffer.jpeg'
 function Offer() {
     
   return (
-    <div className="container d-flex">
-			
-				<div className="card" style={{width: "18rem", padding:"1rem", margin:"1rem",  borderTop:"2px solid green", borderBottom:"2px solid green"}}>
-					<div className="card-header text-center" style={{borderTop:"2px solid black"}}><strong>Offer for 1-Month</strong></div>
+    	<div className='container' style={{marginBottom:"1rem"}} >
+				<div className='row'>
+					<div className='col'>
+					<div className="card " style={{width: "16rem",borderTop:"2px solid green", borderBottom:"2px solid green"}}>
+					<div className="card-header text-center" ><strong>Offer for 1-Month</strong></div>
   					<img src={pic1} className="card-img-top" alt="network error" />
-  					<div className="card-body" style={{borderBottom:"2px solid black"}}>
+  					<div className="card-body" 
+					>
 						<div className='text-center'>
 							<h6 className="card-text"><del>1000 <span>RS</span></del></h6>
 							<p className="card-text">Price : 600 RS</p>
@@ -19,12 +21,14 @@ function Offer() {
 							<button type="button" onClick="paymentStart_600()" className="btn btn-warning">Pay Now</button> */}    
 						</div>		
   					</div>
-				</div>
-			
-				<div className="card" style={{width: "18rem", padding:"1rem", margin:"1rem", borderTop:"2px solid green", borderBottom:"2px solid green"}}>
-					<div className="card-header text-center" style={{borderTop:"2px solid black"}}><strong>Offer for 3-Month</strong></div>
+					</div>
+					</div>
+
+					<div className='col'>
+					<div className="card" style={{width: "16rem", borderTop:"2px solid green", borderBottom:"2px solid green"}}>
+					<div className="card-header text-center" ><strong>Offer for 3-Month</strong></div>
   					<img src={pic1} className="card-img-top" alt="network error" />
-  					<div className="card-body" style={{borderBottom:"2px solid black"}}>
+  					<div className="card-body" >
 						<div className=' text-center' >
 							<h6 className="card-text"><del>3000 <span>RS</span></del></h6>
                             <p className="card-text">Price : 1500 RS</p>
@@ -33,14 +37,15 @@ function Offer() {
                             <input id="payment_600" type="hidden" name="amount" value="600"/>
 							<button type="button" onClick="paymentStart_600()" className="btn btn-warning">Pay Now</button> */}
 						</div>		
-  					</div>
-				</div>
-			
-			
-				<div className="card" style={{width: "18rem", padding:"1rem", margin:"1rem",borderTop:"2px solid green", borderBottom:"2px solid green"}}>
-					<div className="card-header text-center"style={{borderTop:"2px solid black"}}><strong>Offer for 6-Month</strong></div>
+  						</div>
+						</div>
+					</div>
+
+					<div className='col'>
+					<div className="card" style={{width: "16rem", borderTop:"2px solid green", borderBottom:"2px solid green"}}>
+					<div className="card-header text-center"><strong>Offer for 6-Month</strong></div>
   					<img src={pic1} className="card-img-top" alt="network error" />
-  					<div className="card-body" style={{borderBottom:"2px solid black"}}>
+  					<div className="card-body" >
 					  		<div className=' text-center' >
 								<h6 className="card-text"><del>6000 <span>RS</span></del></h6>
                             	<p className="card-text">Price : 2400 RS</p>
@@ -49,13 +54,15 @@ function Offer() {
                             	<input id="payment_600" type="hidden" name="amount" value="600"/>
 								<button type="button" onClick="paymentStart_600()" className="btn btn-warning">Pay Now</button> */}
 							</div>	
-  					</div>
-				</div>
-			
-				<div className="card" style={{width: "18rem", padding:"1rem", margin:"1rem", borderTop:"2px solid green", borderBottom:"2px solid green"}}>
-					<div className="card-header text-center" style={{borderTop:"2px solid black"}}><strong>Offer for 12-Month</strong></div>
+  							</div>
+							</div>
+					</div>
+
+					<div className='col'>
+					<div className="card" style={{width: "16rem",  borderTop:"2px solid green", borderBottom:"2px solid green"}}>
+					<div className="card-header text-center" ><strong>Offer for 12-Month</strong></div>
   					<img src={pic1} className="card-img-top" alt="network error" />
-  					<div className="card-body" style={{borderBottom:"2px solid black"}}>
+  					<div className="card-body" >
 					    	<div className=' text-center'>
 								<h6 className="card-text "><del>12000 <span>RS</span></del></h6>
 								<p className="card-text">Price : 5000 RS</p>
@@ -64,9 +71,11 @@ function Offer() {
                             	<input id="payment_600" type="hidden" name="amount" value="600"/>
 								<button type="button" onClick="paymentStart_600()" className="btn btn-warning">Pay Now</button> */}
 							</div>	
-  					</div>
+  							</div>
+						</div>
+					</div>
 				</div>
-			</div>
+		</div>
 	
   )
 }
