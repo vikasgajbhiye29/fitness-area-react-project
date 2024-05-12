@@ -42,8 +42,8 @@ export default function Navbar(props) {
                    {props.help}
                   </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><Link className="dropdown-item" to="/">Option 1</Link></li>
-                  <li><Link className="dropdown-item" to="/">Option 2</Link></li>
+                  <li><Link className="dropdown-item" to="/admindashboard">{props.admindash}</Link></li>
+                  <li><Link className="dropdown-item" to="/userdashboard">{props.userdash}</Link></li>
                   <li><hr className="dropdown-divider"/></li>
                   <li><Link className="dropdown-item" to="/">Option 3</Link></li>
                 </ul>
