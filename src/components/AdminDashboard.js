@@ -2,6 +2,9 @@ import React from 'react'
 import { BsFillMenuButtonWideFill } from "react-icons/bs";
 import profile from './images/profile.png'
 import { IoCloseCircleSharp } from "react-icons/io5";
+import { MdOutlineAutoDelete } from "react-icons/md";
+import { CiEdit } from "react-icons/ci";
+
 
 
 
@@ -51,7 +54,125 @@ function AdminDashboard() {
             </div>
             {/* column secound for Admin Panel */}
             <div className='col'>
-                <div className='row text-center my-3'><h3 style={{color:"black", backgroundColor:"gray",border:"2px solid gray", borderRadius:"10px", padding:"2px"}}>Admin Dashboard</h3></div>
+                <div className='row my-3'><h3 style={{ borderRadius:"10px", padding:"2px"}}>Admin Dashboard</h3></div>
+                    { /* 1 */}
+                <div className='row'>
+                    <div className='col-sm-3'>
+                        <div className='row align-items-center' style={{borderLeft:"10px solid green", borderRadius:"10px", height:"80px",backgroundColor:"whitesmoke", marginLeft:"4px" }}>
+                            <div className='col-sm'>
+                                
+                                <a href="/" style={{textDecoration:"none", width:"50px", height:"50px",color:"black"}} >
+                                    <img style={{width:"50px",height:"50px", margin:"20px"}} src={profile} alt='Network Error'/>
+                                    <strong>User's (10)</strong>
+                                </a>  
+                            </div>
+                        </div>
+                    </div>
+                
+                    {/* 2 */}
+
+                    <div className='col-sm-3'>
+                        <div className='row align-items-center' style={{borderLeft:"10px solid green",borderRadius:"10px", height:"80px",backgroundColor:"whitesmoke",marginLeft:"4px"}}>
+                            <div className='col-sm'>
+                                
+                                <a href="/" style={{textDecoration:"none", width:"50px", height:"50px",color:"black"}} >
+                                    <img style={{width:"50px",height:"50px", margin:"20px"}} src={profile} alt='Network Error'/>
+                                    <strong>Employee's (10)</strong>
+                                </a>  
+                            </div>
+                        </div>
+                    </div>
+               
+                    {/* 3 */}
+                
+                    <div className='col-sm-3'>
+                        <div className='row align-items-center' style={{borderLeft:"10px solid green",borderRadius:"10px", height:"80px",backgroundColor:"whitesmoke", marginLeft:"4px"}}>
+                            <div className='col-sm'>
+                                
+                                <a href="/" style={{textDecoration:"none", width:"50px", height:"50px",color:"black"}} >
+                                    <img style={{width:"50px",height:"50px", margin:"20px"}} src={profile} alt='Network Error'/>
+                                    <strong>Product's (10)</strong>
+                                </a>  
+                            </div>
+                        </div>
+                    </div>
+            
+                    {/* 4 */}
+                
+                    <div className='col-sm-3'>
+                        <div className='row align-items-center' style={{borderLeft:"10px solid green",borderRadius:"10px", height:"80px",backgroundColor:"whitesmoke", marginLeft:"4px"}}>
+                            <div className='col-sm'>
+                                
+                                <a href="/" style={{textDecoration:"none", width:"50px", height:"50px",color:"black"}} >
+                                    <img style={{width:"50px",height:"50px", margin:"20px"}} src={profile} alt='Network Error'/>
+                                    <strong>Category's(10)</strong>
+                                </a>  
+                            </div>
+                        </div>
+                    </div>
+               
+                </div>
+                {/* Active users */}
+                <div className='row my-3' style={{}}>
+                    <div className='container col'style={{ backgroundColor:"whitesmoke", borderRadius:"10px", color:"black"}}>
+                    <h5 className='my-2' style={{marginLeft:"8px"}}>List Of Active User  </h5>
+                        <div className='container' >
+                            <div className='row'>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Expiry_Date</th>
+                                        <th scope="col">Edit/Delete</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                     <tr>
+                                        <th scope="row">1</th>
+                                        <td>Vikas Gajbhiye</td>
+                                        <td><button className='btn btn-primary' style={{borderRadius:"50px"}}>Active</button></td>
+                                        <td>20/10/2024</td>
+                                        <td><button className='btn btn-success'  data-bs-toggle="tooltip" data-bs-placement="right" title="Edit"><CiEdit /></button>
+                                        <button style={{marginLeft:"2px"}} className='btn btn-danger'  data-bs-toggle="tooltip" data-bs-placement="right" title="Delete"><MdOutlineAutoDelete /></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Sahil Meshram</td>
+                                        <td><button className='btn btn-primary' style={{borderRadius:"50px"}}>Active</button></td>
+                                        <td>20/10/2024</td>
+                                        <td><button className='btn btn-success'  data-bs-toggle="tooltip" data-bs-placement="right" title="Edit"><CiEdit /></button>
+                                        <button style={{marginLeft:"2px"}} className='btn btn-danger'  data-bs-toggle="tooltip" data-bs-placement="right" title="Delete"><MdOutlineAutoDelete /></button>
+                                        </td>
+                                     </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Shubham Jadhav</td>
+                                        <td><button className='btn btn-primary' style={{borderRadius:"50px"}}>Active</button></td>
+                                        <td>20/10/2024</td>
+                                        <td><button className='btn btn-success'  data-bs-toggle="tooltip" data-bs-placement="right" title="Edit"><CiEdit /></button>
+                                        <button style={{marginLeft:"2px"}} className='btn btn-danger'  data-bs-toggle="tooltip" data-bs-placement="right" title="Delete"><MdOutlineAutoDelete /></button>
+                                        </td>
+                                    </tr>
+    
+                                </tbody>
+                            </table>
+                                
+                            </div>
+                            
+                        </div>
+                       
+                    
+                    </div>
+                    {/* add another activity */}
+                   
+
+
+                </div>
+
             </div>
 
         </div>
