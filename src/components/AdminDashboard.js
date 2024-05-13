@@ -8,6 +8,12 @@ import category from './images/categories.png'
 import { IoCloseCircleSharp } from "react-icons/io5";
 import { MdOutlineAutoDelete } from "react-icons/md";
 import { CiEdit } from "react-icons/ci";
+import { FaArrowLeft } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa6";
+import { FcApproval } from "react-icons/fc";
+
+
+
 
 
 
@@ -58,7 +64,7 @@ function AdminDashboard() {
             </div>
             {/* column secound for Admin Panel */}
             <div className='col' style={{backgroundColor:"whitesmoke", borderRadius:"20px"}}>
-                <div className='row my-3'><h3 style={{fontFamily:"", marginLeft:"20px", borderRadius:"10px", padding:"2px"}}>Admin Dashboard</h3></div>
+                <div className='row my-3'><h3 style={{fontFamily:"", marginLeft:"20px", borderRadius:"10px", padding:"2px"}}>Admin Dashboard <FaArrowRight /></h3></div>
                     { /* 1 */}
                 <div className='row'>
                     <div className='col-sm-3'>
@@ -118,11 +124,11 @@ function AdminDashboard() {
                 </div>
                 {/* Active users */}
                 <div className='row my-3' style={{}}>
-                    <div className='container col'style={{ borderRadius:"10px", color:"black"}}>
-                    <h5 className='my-2' style={{marginLeft:"8px"}}>List Of Active User  </h5>
+                    <div className='container text-center col'>
+                    <h5 className='my-2' style={{padding:"10px",borderRadius:'10px', fontFamily:"cursive", color:"black" , backgroundColor:"darkgrey"}}> <FaArrowLeft /> List Of Active User <FaArrowRight /> </h5>
                         <div className='container' >
                             <div className='row'>
-                            <table class="table table-striped">
+                            <table style={{border:'2px solid black',fontFamily:"cursive"}} class="table table-secondary table-striped">
                                 <thead>
                                     <tr>
                                         <th scope="col">ID</th>
@@ -137,7 +143,7 @@ function AdminDashboard() {
                                      <tr>
                                         <th scope="row">1</th>
                                         <td>Vikas Gajbhiye</td>
-                                        <td><button className='btn btn-primary' style={{borderRadius:"50px"}}>Active</button></td>
+                                        <td><button className='btn btn-primary' style={{borderRadius:"50px"}}>Active <FcApproval /></button></td>
                                         <td>20/10/2024</td>
                                         <td><button className='btn btn-success'  data-bs-toggle="tooltip" data-bs-placement="right" title="Edit"><CiEdit /></button>
                                         <button style={{marginLeft:"2px"}} className='btn btn-danger'  data-bs-toggle="tooltip" data-bs-placement="right" title="Delete"><MdOutlineAutoDelete /></button>
@@ -146,7 +152,7 @@ function AdminDashboard() {
                                     <tr>
                                         <th scope="row">2</th>
                                         <td>Sahil Meshram</td>
-                                        <td><button className='btn btn-primary' style={{borderRadius:"50px"}}>Active</button></td>
+                                        <td><button className='btn btn-primary' style={{borderRadius:"50px"}}>Active <FcApproval /></button></td>
                                         <td>20/10/2024</td>
                                         <td><button className='btn btn-success'  data-bs-toggle="tooltip" data-bs-placement="right" title="Edit"><CiEdit /></button>
                                         <button style={{marginLeft:"2px"}} className='btn btn-danger'  data-bs-toggle="tooltip" data-bs-placement="right" title="Delete"><MdOutlineAutoDelete /></button>
@@ -155,7 +161,7 @@ function AdminDashboard() {
                                     <tr>
                                         <th scope="row">3</th>
                                         <td>Shubham Jadhav</td>
-                                        <td><button className='btn btn-primary' style={{borderRadius:"50px"}}>Active</button></td>
+                                        <td><button className='btn btn-primary' style={{borderRadius:"50px"}}>Active <FcApproval /></button></td>
                                         <td>20/10/2024</td>
                                         <td><button className='btn btn-success'  data-bs-toggle="tooltip" data-bs-placement="right" title="Edit"><CiEdit /></button>
                                         <button style={{marginLeft:"2px"}} className='btn btn-danger'  data-bs-toggle="tooltip" data-bs-placement="right" title="Delete"><MdOutlineAutoDelete /></button>

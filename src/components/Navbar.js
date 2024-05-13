@@ -10,6 +10,7 @@ export default function Navbar(props) {
   const [fname, setFname] = useState('')
   const [lname, setLname] = useState('')
   const [username, setUsername] = useState('')
+  const [mobile, setMobile] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   
@@ -146,6 +147,15 @@ export default function Navbar(props) {
                                 name="username"
                                 value={username} 
                                 onChange={(e) => setUsername(e.target.value)} ></input>
+                            </div>
+                            <div className="from-group mb-2">
+                              <label className="form-label">Mobile :</label>
+                              <input style={{backgroundColor:"black", color:"white"}} className="form-control"
+                                type="number"
+                                placeholder="Enter Your Mobile"
+                                name="mobile"
+                                value={mobile} 
+                                onChange={(e) => setMobile(e.target.value)} ></input>
                             </div>
                             <div className="from-group mb-2">
                               <label className="form-label">Email :</label>
