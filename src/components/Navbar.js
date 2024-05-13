@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react'
 import { useNavigate} from 'react-router-dom'
+import logo from './images/gymlogo.png'
 
 
 export default function Navbar(props) {
@@ -25,7 +26,7 @@ export default function Navbar(props) {
     <div>
       <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
         <div className="container-fluid">
-            <Link className="navbar-brand" to="/">{props.title}</Link>
+         <Link style={{ marginLeft:'10px',paddingBottom:"18px"}}  className="navbar-brand" to="/"><img style={{height:"55px", width:"155px"}} src={logo} alt='Network error' /></Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>

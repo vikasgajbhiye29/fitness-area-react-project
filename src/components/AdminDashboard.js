@@ -1,6 +1,10 @@
 import React from 'react'
 import { BsFillMenuButtonWideFill } from "react-icons/bs";
 import profile from './images/profile.png'
+import user from './images/user.png'
+import employee from './images/employee.png'
+import product from './images/product.png'
+import category from './images/categories.png'
 import { IoCloseCircleSharp } from "react-icons/io5";
 import { MdOutlineAutoDelete } from "react-icons/md";
 import { CiEdit } from "react-icons/ci";
@@ -53,16 +57,16 @@ function AdminDashboard() {
                 </div>
             </div>
             {/* column secound for Admin Panel */}
-            <div className='col'>
-                <div className='row my-3'><h3 style={{ borderRadius:"10px", padding:"2px"}}>Admin Dashboard</h3></div>
+            <div className='col' style={{backgroundColor:"whitesmoke", borderRadius:"20px"}}>
+                <div className='row my-3'><h3 style={{fontFamily:"", marginLeft:"20px", borderRadius:"10px", padding:"2px"}}>Admin Dashboard</h3></div>
                     { /* 1 */}
                 <div className='row'>
                     <div className='col-sm-3'>
-                        <div className='row align-items-center' style={{borderLeft:"10px solid green", borderRadius:"10px", height:"80px",backgroundColor:"whitesmoke", marginLeft:"4px" }}>
+                        <div className='row align-items-center' style={{borderLeft:"10px solid green", borderRadius:"10px", height:"80px",backgroundColor:"white", marginLeft:"4px" }}>
                             <div className='col-sm'>
                                 
                                 <a href="/" style={{textDecoration:"none", width:"50px", height:"50px",color:"black"}} >
-                                    <img style={{width:"50px",height:"50px", margin:"20px"}} src={profile} alt='Network Error'/>
+                                    <img style={{width:"50px",height:"50px", margin:"20px"}} src={user} alt='Network Error'/>
                                     <strong>User's (10)</strong>
                                 </a>  
                             </div>
@@ -72,11 +76,11 @@ function AdminDashboard() {
                     {/* 2 */}
 
                     <div className='col-sm-3'>
-                        <div className='row align-items-center' style={{borderLeft:"10px solid green",borderRadius:"10px", height:"80px",backgroundColor:"whitesmoke",marginLeft:"4px"}}>
+                        <div className='row align-items-center' style={{borderLeft:"10px solid green",borderRadius:"10px", height:"80px",backgroundColor:"white",marginLeft:"4px"}}>
                             <div className='col-sm'>
                                 
                                 <a href="/" style={{textDecoration:"none", width:"50px", height:"50px",color:"black"}} >
-                                    <img style={{width:"50px",height:"50px", margin:"20px"}} src={profile} alt='Network Error'/>
+                                    <img style={{width:"50px",height:"50px", margin:"20px"}} src={employee} alt='Network Error'/>
                                     <strong>Employee's (10)</strong>
                                 </a>  
                             </div>
@@ -86,11 +90,11 @@ function AdminDashboard() {
                     {/* 3 */}
                 
                     <div className='col-sm-3'>
-                        <div className='row align-items-center' style={{borderLeft:"10px solid green",borderRadius:"10px", height:"80px",backgroundColor:"whitesmoke", marginLeft:"4px"}}>
+                        <div className='row align-items-center' style={{borderLeft:"10px solid green",borderRadius:"10px", height:"80px",backgroundColor:"white", marginLeft:"4px"}}>
                             <div className='col-sm'>
                                 
                                 <a href="/" style={{textDecoration:"none", width:"50px", height:"50px",color:"black"}} >
-                                    <img style={{width:"50px",height:"50px", margin:"20px"}} src={profile} alt='Network Error'/>
+                                    <img style={{width:"50px",height:"50px", margin:"20px"}} src={product} alt='Network Error'/>
                                     <strong>Product's (10)</strong>
                                 </a>  
                             </div>
@@ -100,11 +104,11 @@ function AdminDashboard() {
                     {/* 4 */}
                 
                     <div className='col-sm-3'>
-                        <div className='row align-items-center' style={{borderLeft:"10px solid green",borderRadius:"10px", height:"80px",backgroundColor:"whitesmoke", marginLeft:"4px"}}>
+                        <div className='row align-items-center' style={{borderLeft:"10px solid green",borderRadius:"10px", height:"80px",backgroundColor:"white", marginLeft:"4px"}}>
                             <div className='col-sm'>
                                 
                                 <a href="/" style={{textDecoration:"none", width:"50px", height:"50px",color:"black"}} >
-                                    <img style={{width:"50px",height:"50px", margin:"20px"}} src={profile} alt='Network Error'/>
+                                    <img style={{width:"50px",height:"50px", margin:"20px"}} src={category} alt='Network Error'/>
                                     <strong>Category's(10)</strong>
                                 </a>  
                             </div>
@@ -114,7 +118,7 @@ function AdminDashboard() {
                 </div>
                 {/* Active users */}
                 <div className='row my-3' style={{}}>
-                    <div className='container col'style={{ backgroundColor:"whitesmoke", borderRadius:"10px", color:"black"}}>
+                    <div className='container col'style={{ borderRadius:"10px", color:"black"}}>
                     <h5 className='my-2' style={{marginLeft:"8px"}}>List Of Active User  </h5>
                         <div className='container' >
                             <div className='row'>
