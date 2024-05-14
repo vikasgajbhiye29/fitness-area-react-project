@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/fitness-area-react-project/static/css/main.edf9bad3.css",
-    "main.js": "/fitness-area-react-project/static/js/main.768b3568.js",
+    "main.css": "/fitness-area-react-project/static/css/main.8b1ae1ec.css",
+    "main.js": "/fitness-area-react-project/static/js/main.44d48b25.js",
     "static/media/gymlogo.png": "/fitness-area-react-project/static/media/gymlogo.30122f8138dd4ab61390.png",
-    "static/media/pic2.jpg": "/fitness-area-react-project/static/media/pic2.a8e9f550e94bfbf52421.jpg",
+    "static/media/card_one.png": "/fitness-area-react-project/static/media/card_one.e2a1faf9db31cb1f4c16.png",
+    "static/media/card_three.png": "/fitness-area-react-project/static/media/card_three.8781b359386329834fd4.png",
+    "static/media/card_four.png": "/fitness-area-react-project/static/media/card_four.511eecf4203a07561650.png",
+    "static/media/card_two.png": "/fitness-area-react-project/static/media/card_two.dcb3c878ddc6ddc2b0c1.png",
     "static/media/profile.png": "/fitness-area-react-project/static/media/profile.e59e876e957af0da222c.png",
-    "static/media/pic1.jpg": "/fitness-area-react-project/static/media/pic1.ce6460c17c5072eda947.jpg",
-    "static/media/pic4.jpg": "/fitness-area-react-project/static/media/pic4.067eb1d9ac870991f609.jpg",
-    "static/media/pic3.jpg": "/fitness-area-react-project/static/media/pic3.962c82830b931ec50ccf.jpg",
-    "static/media/imgforoffer.jpeg": "/fitness-area-react-project/static/media/imgforoffer.64bd96cf60e856c64682.jpeg",
+    "static/media/offer_4thMonth.png": "/fitness-area-react-project/static/media/offer_4thMonth.c13c66fd34a79194622f.png",
+    "static/media/offer_3rdMonth.png": "/fitness-area-react-project/static/media/offer_3rdMonth.b2f84cd3d5f5d9dac5ef.png",
+    "static/media/offer_1stMonth.png": "/fitness-area-react-project/static/media/offer_1stMonth.39ba96cb57167b416949.png",
+    "static/media/offer_2ndMonth.png": "/fitness-area-react-project/static/media/offer_2ndMonth.be3e63a7d6cdf5bd74b1.png",
     "static/media/employee.png": "/fitness-area-react-project/static/media/employee.74d7dcc905e1b0dc9d0f.png",
     "static/media/product.png": "/fitness-area-react-project/static/media/product.4e37196df511b23a369f.png",
     "static/media/user.png": "/fitness-area-react-project/static/media/user.ade507d1a91789a6a3bd.png",
     "index.html": "/fitness-area-react-project/index.html",
-    "main.edf9bad3.css.map": "/fitness-area-react-project/static/css/main.edf9bad3.css.map",
-    "main.768b3568.js.map": "/fitness-area-react-project/static/js/main.768b3568.js.map"
+    "main.8b1ae1ec.css.map": "/fitness-area-react-project/static/css/main.8b1ae1ec.css.map",
+    "main.44d48b25.js.map": "/fitness-area-react-project/static/js/main.44d48b25.js.map"
   },
   "entrypoints": [
-    "static/css/main.edf9bad3.css",
-    "static/js/main.768b3568.js"
+    "static/css/main.8b1ae1ec.css",
+    "static/js/main.44d48b25.js"
   ]
 }
