@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fitness-area-react-project/static/css/main.8b1ae1ec.css",
-    "main.js": "/fitness-area-react-project/static/js/main.5aa6114e.js",
+    "main.js": "/fitness-area-react-project/static/js/main.9678e064.js",
     "static/media/gymlogo.png": "/fitness-area-react-project/static/media/gymlogo.30122f8138dd4ab61390.png",
     "static/media/card_one.png": "/fitness-area-react-project/static/media/card_one.e2a1faf9db31cb1f4c16.png",
     "static/media/card_three.png": "/fitness-area-react-project/static/media/card_three.8781b359386329834fd4.png",
@@ -17,10 +17,10 @@
     "static/media/user.png": "/fitness-area-react-project/static/media/user.ade507d1a91789a6a3bd.png",
     "index.html": "/fitness-area-react-project/index.html",
     "main.8b1ae1ec.css.map": "/fitness-area-react-project/static/css/main.8b1ae1ec.css.map",
-    "main.5aa6114e.js.map": "/fitness-area-react-project/static/js/main.5aa6114e.js.map"
+    "main.9678e064.js.map": "/fitness-area-react-project/static/js/main.9678e064.js.map"
   },
   "entrypoints": [
     "static/css/main.8b1ae1ec.css",
-    "static/js/main.5aa6114e.js"
+    "static/js/main.9678e064.js"
   ]
 }
