@@ -1,9 +1,7 @@
 
-import { useState } from 'react';
 import './App.css';
 import About from './components/About';
 import Navbar from './components/Navbar';
-import Alert from './components/Alert';
 import{BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './components/Home';
 import Footer from './components/Footer';
@@ -13,42 +11,15 @@ import UserDashboard from './components/UserDashboard';
 
 
 function App() {
-  // Dark Mode Is Enable Or Not
-  const [mode, setMode] = useState('light'); 
 
-  const [button, setButton] = useState('OFF');
-  const [alert, setAlert] = useState(null);
-  const showAlert = (message, type) => {
-    setAlert({
-      message: message,
-      type: type,
-    })
-   setTimeout(() => {
-    setAlert(null);
-   }, 1500);
-  }
-  const toggleMode = () =>{
-    if(mode === 'light'){
-      setMode('dark')
-      setButton('ON')
-      document.body.style.backgroundColor = 'black';
-      showAlert("Dark Mode ON", "success")
-    }else{
-      setMode('light')
-      setButton('OFF')
-      document.body.style.backgroundColor = 'white';
-      showAlert("Dark Mode OFF", "success")
-    }
-  }
   return (
     <>
       <BrowserRouter basename='/fitness-area-react-project'>
-          <Navbar title="Fitness_Area" home="HOME" about="About Us"  help="Help" mode={mode} toggleMode={toggleMode} button={button} admindash="Admin Dashboard" userdash="User Dashboard"/>
-          <Alert alert={alert}/>
+          <Navbar title="Fitness_Area" home="HOME" about="About Us"  help="Service" admindash="Admin Dashboard" userdash="User Dashboard"/>
           
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About title1="Information About Us" title2="Technology To Be Use" title3="Contact Us" mode={mode}/>}/>
+            <Route path='/about' element={<About title1="Information About Us" title2="Technology To Be Use" title3="Contact Us" />}/>
             <Route path='/admindashboard' element={<AdminDashboard/>}/>
             <Route path='/userdashboard' element={<UserDashboard />} />
           </Routes>

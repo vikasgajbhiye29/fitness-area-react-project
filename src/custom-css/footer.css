@@ -1,6 +1,6 @@
 .footer{
-    background-color: black;
-    color: gray;
+    background-color: darkgray;
+    color: black;
     padding-top: 2rem;
 }
 
@@ -8,7 +8,7 @@
     color:red;
 }
 .footer-custom-1 h4 span{
-    color:gray;
+    color:black;
 }
 .footer-youtube a {
     color: red;
@@ -19,7 +19,7 @@
 
 .footer-link-decoration{
    text-decoration: none;
-   color: gray;
+   color: black;
    padding-left: 0;
 }
 .footer-location{
