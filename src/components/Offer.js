@@ -10,7 +10,7 @@ function Offer() {
     	<div className='container my-2' style={{marginBottom:"1rem"}} >
 				<div className='row'>
 					<div className='my-3 col-sm-3'>
-					<div className="card " style={{border:"2px solid yellow", borderBottom:"2px solid green"}}>
+					<div className="card " style={{border:"2px solid yellow"}}>
 					{/* <div className="card-header text-center" ><strong>Offer for 1-Month</strong></div> */}
   					<img src={offer_40} className="card-img-top" alt="network error" />
   					{/* <div className="card-body" >
@@ -27,7 +27,7 @@ function Offer() {
 					</div>
 
 					<div className='my-3 col-sm-3'>
-					<div className="card" style={{border:"2px solid yellow", borderBottom:"2px solid green"}}>
+					<div className="card" style={{border:"2px solid yellow"}}>
 					{/* <div className="card-header text-center" ><strong>Offer for 3-Month</strong></div> */}
   					<img src={offer_50} className="card-img-top" alt="network error" />
   					{/* <div className="card-body" >
@@ -44,7 +44,7 @@ function Offer() {
 					</div>
 
 					<div className='my-3 col-sm-3'>
-					<div className="card" style={{border:"2px solid yellow", borderBottom:"2px solid green"}}>
+					<div className="card" style={{border:"2px solid yellow"}}>
 					{/* <div className="card-header text-center"><strong>Offer for 6-Month</strong></div> */}
   					<img src={offer_60} className="card-img-top" alt="network error" />
   						{/* <div className="card-body" >
@@ -61,7 +61,7 @@ function Offer() {
 					</div>
 
 					<div className='my-3 col-sm-3'>
-					<div className="card" style={{border:"2px solid yellow", borderBottom:"2px solid green"}}>
+					<div className="card" style={{border:"2px solid yellow"}}>
 					{/* <div className="card-header text-center" ><strong>Offer for 12-Month</strong></div> */}
   					<img src={offer_65} className="card-img-top" alt="network error" />
   						{/* <div className="card-body" >
